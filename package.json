@@ -1,0 +1,23 @@
+ {
+  "name": "javascript-web",
+  "version": "1.0.0",
+  "description": "js y jquery",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danicrom7/javascript-web.git"
+  },
+  "keywords": [
+    "javascript",
+    "jquery"
+  ],
+  "author": "daniel gl",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danicrom7/javascript-web/issues"
+  },
+  "homepage": "https://github.com/danicrom7/javascript-web#readme"
+}

@@ -1,4 +1,4 @@
- {
+{
   "name": "javascript-web",
   "version": "1.0.0",
   "description": "js y jquery",
@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/danicrom7/javascript-web/issues"
   },
-  "homepage": "https://github.com/danicrom7/javascript-web#readme"
+  "homepage": "https://github.com/danicrom7/javascript-web#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
 }

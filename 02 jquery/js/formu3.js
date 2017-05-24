@@ -15,8 +15,8 @@ class Formulario{
 			// Valores por defencto que actualizan el DOM
 
 			this.oDOM.fNombre[0].value = 'Pepe'
-	        this.oDOM.spanNombre.innerHTML = this.oDOM.fNombre.value; 
-	        this.oDOM.spanCurso.innerHTML = "Desarrollo Web Full-Stack";
+	        this.oDOM.spanNombre[0].innerHTML = this.oDOM.fNombre[0].value; 
+	        this.oDOM.spanCurso[0].innerHTML = "Desarrollo Web Full-Stack";
 			console.dir(this.oDOM);
 
 			// Definicion de los manejadores de eventos
@@ -28,10 +28,10 @@ class Formulario{
      actualizarVista (oEvent) {
 			
 			if (oEvent.currentTarget.id == "btnBorrar") {
-				this.oDOM.fNombre.value = ''
+				this.oDOM.fNombre[0].value = ''
 			}	
-			this.oDOM.spanNombre.innerHTML = this.oDOM.fNombre.value; 
-			console.log(this.oDOM.fNombre.value);
+			this.oDOM.spanNombre[0].innerHTML = this.oDOM.fNombre[0].value; 
+			console.log(this.oDOM.fNombre[0].value);
 
 		} // Fin de la funcion actualizarVista
 }

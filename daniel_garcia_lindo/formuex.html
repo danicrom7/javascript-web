@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es"> 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Tarea Formulario</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            *{box-sizing: border-box;}
+            section{width: 90%; margin: 1em auto; 
+                    background-color: silver;}
+            footer{ width: 100%; margin: 1em auto;}
+            form{ width: 95%; background-color: royalblue;
+                 margin: 1em auto;}
+            #d1{width: 50%; float: left;}
+            #d2{width: 50%; display: inline-block;}
+            fieldset{ margin:1em; padding: 1em;}
+            .mar{margin: 1em;}
+            .martop{margin-top: 2em;}
+            .dc1{width: 24%; float: left;}
+            .dc2{width: 24%; display: inline-block;}
+            .general{margin: 1em;}
+            .sele{ margin: 1em;}
+            
+
+        </style>
+    </head>
+    <body>
+<section>
+        <Form>
+            <fieldset class="general">
+                <legend>Datos del alumno</legend>
+
+              <div id="d1">
+                          <fieldset>
+                                   <legend>Identificación</legend>
+                                   <label for="mail">Cuenta de correo</label><input class="mar" type="email" id="mail" name="mail"><br>
+                                   <label for="pass">Introduzca su clave de acceso</label><input class="mar" type="password" id="pass" name="pass"><br>
+                                   <label for="rpass">Repita clave de acceso</label><input class="mar" type="password" id="rpass" name="rpass"><br>
+
+
+                          </fieldset>
+
+                          <fieldset>
+                                   <legend>Curso</legend>
+                                   <div>
+                                   <input type="radio" id="" name="prog" value="programador web"><label for="prog">Programador Web</label><br>
+                                   <input type="radio" id="" name="prog" value="programador de sistemas"><label for="prog">Programador de Sistemas</label><br>
+                                   <input type="radio" id="" name="prog" value="programador de objetos"><label for="prog">Programador DE Objetos</label><br>
+                                   </div> 
+                                   <div class="sele">
+        <select name="lenguaje" id="colores">
+                     
+                     <option value="html">HTML</option>
+                     <option value="css">css</option>
+                     <option value="js">JS</option>
+                     
+        </select>
+                                   </div>
+                          </fieldset>
+
+                          <fieldset>
+
+                                <input type="button" value="Enviar" class="sele"><input class="sele" type="reset" value="Restablecer Datos">
+
+
+
+                          </fieldset>
+                        
+
+
+              </div>
+              <div id="d2">
+                     <fieldset>
+                         <legend>Datos Personales</legend>
+                            <label for="">Nombre</label><input class="mar" type="text"><br>
+                            <label for="">Primer Apellido</label><input class="mar" type="text"><br>
+                            <label for="">segundo apellido</label><input class="mar" type="text"><br>
+
+                     <fieldset> 
+                           <legend>Fecha de nacimiento</legend>
+                           
+                           <label>dia</label><input type="number">
+                           <label>mes</label><input type="number">
+                           <label>año</label><input type="number">
+
+
+                     </fieldset>         
+
+                     </fieldset>
+                     <fieldset>
+                           <div class="dc1">
+                               <input class="martop" type="checkbox"><label for="">Música</label> <br>
+                               <input class="martop" type="checkbox"><label for="">Viajar</label><br>
+                           </div>
+                           <div class="dc2">
+                               <input class="martop" type="checkbox"><label for="">Pintura</label><br>
+                               <input class="martop" type="checkbox"><label for="">Fotografía</label><br>
+
+                           </div>
+                           <div class="dc2">
+                               <input class="martop" type="checkbox"><label for="">Música</label><br>
+                               <input class="martop" type="checkbox"><label for="">Viajar</label><br>
+                           </div>
+                           <div class="dc2">
+                               <input class="martop" type="checkbox"><label for="">Pintura</label><br>
+                               <input class="martop" type="checkbox"><label for="">Fotografía</label><br>
+
+                           </div>
+
+
+                     </fieldset>
+                       <fieldset>
+                              <br>
+                              <br>
+                              <br>
+                          </fieldset>
+                         
+
+              </div>
+
+            </fieldset>
+            
+        </Form>
+
+        <footer>
+                <p>&copy; copyright Daniel Garcia Lindo</p>
+        </footer>
+</section>
+        
+    </body>
+</html>

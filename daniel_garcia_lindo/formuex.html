@@ -45,16 +45,14 @@
                           <fieldset>
                                    <legend>Curso</legend>
                                    <div>
-                                   <input type="radio" id="" name="prog" value="programador web"><label for="prog">Programador Web</label><br>
-                                   <input type="radio" id="" name="prog" value="programador de sistemas"><label for="prog">Programador de Sistemas</label><br>
-                                   <input type="radio" id="" name="prog" value="programador de objetos"><label for="prog">Programador DE Objetos</label><br>
+                                   <input type="radio" id="prog" name="prog" value="programador web"><label for="prog">Programador Web</label><br>
+                                   <input type="radio" id="prog" name="prog" value="programador de sistemas"><label for="prog">Programador de Sistemas</label><br>
+                                   <input type="radio" id="prog" name="prog" value="programador de objetos"><label for="prog">Programador DE Objetos</label><br>
                                    </div> 
                                    <div class="sele">
-        <select name="lenguaje" id="colores">
+        <select name="lenguaje" id="lenguaje">
                      
-                     <option value="html">HTML</option>
-                     <option value="css">css</option>
-                     <option value="js">JS</option>
+                   
                      
         </select>
                                    </div>
@@ -62,7 +60,7 @@
 
                           <fieldset>
 
-                                <input type="button" value="Enviar" class="sele"><input class="sele" type="reset" value="Restablecer Datos">
+                                <input type="submit" id="btn1" value="Enviar" class="sele"><input class="sele" type="reset" value="Restablecer Datos">
 
 
 
@@ -74,16 +72,14 @@
               <div id="d2">
                      <fieldset>
                          <legend>Datos Personales</legend>
-                            <label for="">Nombre</label><input class="mar" type="text"><br>
-                            <label for="">Primer Apellido</label><input class="mar" type="text"><br>
-                            <label for="">segundo apellido</label><input class="mar" type="text"><br>
+                            <label for="fnombre">Nombre</label><input class="mar" type="text" id="fnombre"><br>
+                            <label for="apell1">Primer Apellido</label><input class="mar" type="text" id="apell1"><br>
+                            <label for="apell2">segundo apellido</label><input class="mar" type="text" id="apell2"><br>
 
                      <fieldset> 
                            <legend>Fecha de nacimiento</legend>
                            
-                           <label>dia</label><input type="number">
-                           <label>mes</label><input type="number">
-                           <label>año</label><input type="number">
+                             <label for="ffecha">Fecha</label><input type="date" id="ffecha" name="ffecha">
 
 
                      </fieldset>         
@@ -123,6 +119,9 @@
             </fieldset>
             
         </Form>
+        <div id="parrafo1">
+
+        </div>
 
         <footer>
                 <p>&copy; copyright Daniel Garcia Lindo</p>

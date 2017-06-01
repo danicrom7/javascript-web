@@ -1,4 +1,4 @@
-
+//este si es el verdadero,1 de junio
 
 class Formulario {
 	constructor() {

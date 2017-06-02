@@ -95,3 +95,4 @@ class Formulario {
 		oFormulario = new Formulario
 		document.querySelector("#btn1").addEventListener("click", oFormulario.recogeDatos.bind(oFormulario))
 	}, false);
+	

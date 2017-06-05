@@ -10,20 +10,14 @@ class Formulario {
                     "Curso" : "",
                     "Lenguaje" : "",
 					"Fecha" : "",
-				"Actividades1" : "",
-				"Actividades2" : "",	
-				"Actividades3" : "",	
-				"Actividades4" : "",	
-				"Actividades5" : "",	
-				"Actividades6" : "",	
-				"Actividades7" : "",	
-				"Actividades8" : ""			
+                    "Actividades que podras hacer" : "Música,Viajar,Deporte,Fotografia,Leer,Videojuegos,Gastronomia"
+						
             };
-		
+            this.aActividades = [""]
 	
 
     this.oParrafo = document.querySelector("#listaDatos");
-     // referencia del párrafo donde escribir
+     
 	       this.oBtnEnviar = document.querySelector("#btn1")
         this.oForm = document.querySelector("#form_1")
 
@@ -33,7 +27,7 @@ class Formulario {
         this.oForm.addEventListener("submit", 
             this.simularEnviar.bind(this));
 
-    }
+    };
 	
 
     simularEnviar (oE) {
@@ -42,7 +36,7 @@ class Formulario {
         oE.preventDefault();
        
         this.escribeDatos();
-    }
+    };
 
     recogeDatos (oE) {
         this.oDatos.Nombre = document.querySelector("#fnombre").value;
@@ -54,28 +48,32 @@ class Formulario {
 		this.oDatos.Curso = document.querySelector("#curso").value;
         this.oDatos.Lenguaje = document.querySelector("#lenguaje").value;
 		this.oDatos.Fecha = document.querySelector("#ffecha").value;
-		this.oDatos.Actividades1 = document.querySelector("#actividad1").value;
-		this.oDatos.Actividades2 = document.querySelector("#actividad2").value;
-		this.oDatos.Actividades3 = document.querySelector("#actividad").value;
-		this.oDatos.Actividades4 = document.querySelector("#actividad").value;
-		this.oDatos.Actividades5 = document.querySelector("#actividad").value;
-		this.oDatos.Actividades6 = document.querySelector("#actividad").value;
-		this.oDatos.Actividades7 = document.querySelector("#actividad").value;
-		this.oDatos.Actividades8 = document.querySelector("#actividad").value;
+		this.aActividades = document.querySelector("#actividad1") 
+		this.aActividades = document.querySelector("#actividad2")  
+        this.aActividades =document.querySelector("#actividad3") 
+        this.aActividades= document.querySelector("#actividad4")
+        this.aActividades = document.querySelector("#actividad5") 
+        this.aActividades = document.querySelector("#actividad6") 
+        this.aActividades = document.querySelector("#actividad7") 
+        this.aActividades = document.querySelector("#actividad8") 
         
-    } //Fin del método recogeDatos
+    };
+
+    
 
 	
     escribeDatos () {
-        //ocultar formulario
+        
         document.querySelector("#form_1").classList.toggle("oculto")
-        //mostrar bloque div para el resultado
+        
+
         document.querySelector("#resultado").classList.toggle("oculto");
-        //incorporamos a la lista cada elemento del objeto		
+
+
         for (var i in this.oDatos) {
             this.oParrafo.innerHTML += "<li>" + i + ": <strong>" +
                 this.oDatos[i] + "</strong></li>";
         };
-    } //Fin del método escribedatos	
+    };
 
-} // Fin de la clase Formulario
+};

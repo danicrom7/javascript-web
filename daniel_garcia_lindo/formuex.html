@@ -44,8 +44,8 @@
                           <fieldset>
                                    <legend>Identificación</legend>
                                    <label for="mail">Cuenta de correo</label><input class="mar" type="email" id="mail" name="mail" required><br>
-                                   <label for="pass">Introduzca su clave de acceso</label><input class="mar" type="password" id="pass" name="pass" required><br>
-                                   <label for="rpass">Repita clave de acceso</label><input class="mar" type="password" id="rpass" name="rpass" required><br>
+                                   <label for="pass">Introduzca su clave de acceso</label><input class="mar" type="password" id="pass" name="pass" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{8,12}$" required><br>
+                                   <label for="rpass">Repita clave de acceso</label><input class="mar" type="password" id="rpass" name="rpass" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{8,12}$" required><br>
 
 
                           </fieldset>
@@ -89,21 +89,21 @@
                      </fieldset>
                      <fieldset>
                            <div class="dc1">
-                               <input class="martop" type="checkbox" name="actividad1" value="música"><label for="actividad1">Música</label> <br>
-                               <input class="martop" type="checkbox" name="actividad2" value="viajar" ><label for="actividad2">Viajar</label><br>
+                               <input class="martop" type="checkbox" id="actividad1" value="música"><label for="actividad1">Música</label> <br>
+                               <input class="martop" type="checkbox" id="actividad2" value="viajar" ><label for="actividad2">Viajar</label><br>
                            </div>
                            <div class="dc2">
-                               <input class="martop" type="checkbox"  name="actividad" value="pintura"><label for="actividad">Pintura</label><br>
-                               <input class="martop" type="checkbox"  name="actividad" value="fotografia"><label for="actividad">Fotografía</label><br>
+                               <input class="martop" type="checkbox"  id="actividad3" value="pintura"><label for="actividad3">Pintura</label><br>
+                               <input class="martop" type="checkbox"  id="actividad4" value="fotografia"><label for="actividad4">Fotografía</label><br>
 
                            </div>
                            <div class="dc2">
-                               <input class="martop" type="checkbox"  name="actividad" value="deportes"><label for="actividad">Deportes</label><br>
-                               <input class="martop" type="checkbox"  name="actividad" value="leer"><label for="actividad">Leer</label><br>
+                               <input class="martop" type="checkbox"  id="actividad5" value="deportes"><label for="actividad5">Deportes</label><br>
+                               <input class="martop" type="checkbox"  id="actividad6" value="leer"><label for="actividad6">Leer</label><br>
                            </div>
                            <div class="dc2">
-                               <input class="martop" type="checkbox"  name="actividad" value="videojuegos"><label for="actividad">Videojuegos</label><br>
-                               <input class="martop" type="checkbox"  name="actividad" value="gastronomia"><label for="actividad">Gastronomia</label><br>
+                               <input class="martop" type="checkbox"  id="actividad7" value="videojuegos"><label for="actividad7">Videojuegos</label><br>
+                               <input class="martop" type="checkbox"  id="actividad8" value="gastronomia"><label for="actividad8">Gastronomia</label><br>
 
                            </div>
 

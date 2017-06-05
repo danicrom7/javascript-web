@@ -8,7 +8,7 @@ class App {
         }, false);
     }
 
-} // Fin de la clase App
+} 
 
 
 App.main()

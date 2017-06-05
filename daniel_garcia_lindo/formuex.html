@@ -4,14 +4,15 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Tarea Formulario</title>
-        <meta name="description" content="">
+        <meta name="description" content="ejercicio practico de JavaScript">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Daniel Garcia Lindo">
         <style>
             *{box-sizing: border-box;}
             section{width: 90%; margin: 1em auto; 
                     background-color: silver;}
             footer{ width: 100%; margin: 1em auto;}
-            form{ width: 95%; background-color: royalblue;
+            #form_1{ width: 95%; background-color: royalblue;
                  margin: 1em auto;}
             #d1{width: 50%; float: left;}
             #d2{width: 50%; display: inline-block;}
@@ -22,12 +23,18 @@
             .dc2{width: 24%; display: inline-block;}
             .general{margin: 1em;}
             .sele{ margin: 1em;}
+            .oculto { display: none;}
+
             
 
         </style>
-        
+       
+       
     </head>
     <body>
+        <header>
+            <h1>Formulario JavaScript</h1>
+        </header>
 <section>
         <Form name ="form_1" id="form_1" method="post" enctype="text/plain">
             <fieldset class="general">
@@ -46,16 +53,10 @@
                           <fieldset>
                                    <legend>Curso</legend>
                                    <div>
-                                   <input type="radio" id="prog" name="prog" value="programador web"><label for="prog">Programador Web</label><br>
-                                   <input type="radio" id="prog" name="prog" value="programador de sistemas"><label for="prog">Programador de Sistemas</label><br>
-                                   <input type="radio" id="prog" name="prog" value="programador de objetos"><label for="prog">Programador DE Objetos</label><br>
+                                        <select name="curso" id="curso"></select>
                                    </div> 
                                    <div class="sele">
-        <select name="lenguaje" id="lenguaje">
-                     
-                   
-                     
-        </select>
+                                 <select name="lenguaje" id="lenguaje"></select>
                                    </div>
                           </fieldset>
 
@@ -73,9 +74,9 @@
               <div id="d2">
                      <fieldset>
                          <legend>Datos Personales</legend>
-                            <label for="fnombre">Nombre</label><input class="mar" type="text" id="fnombre"><br>
-                            <label for="apell1">Primer Apellido</label><input class="mar" type="text" id="apell1"><br>
-                            <label for="apell2">segundo apellido</label><input class="mar" type="text" id="apell2"><br>
+                            <label for="fnombre">Nombre</label><input class="mar" type="text" id="fnombre" required><br>
+                            <label for="apell1">Primer Apellido</label><input class="mar" type="text" id="apell1" required><br>
+                            <label for="apell2">segundo apellido</label><input class="mar" type="text" id="apell2" required><br>
 
                      <fieldset> 
                            <legend>Fecha de nacimiento</legend>
@@ -88,30 +89,28 @@
                      </fieldset>
                      <fieldset>
                            <div class="dc1">
-                               <input class="martop" type="checkbox" id="condiciones1"><label for="">Música</label> <br>
-                               <input class="martop" type="checkbox" id="condiciones2"><label for="">Viajar</label><br>
+                               <input class="martop" type="checkbox" name="actividad1" value="música"><label for="actividad1">Música</label> <br>
+                               <input class="martop" type="checkbox" name="actividad2" value="viajar" ><label for="actividad2">Viajar</label><br>
                            </div>
                            <div class="dc2">
-                               <input class="martop" type="checkbox"><label for="">Pintura</label><br>
-                               <input class="martop" type="checkbox"><label for="">Fotografía</label><br>
+                               <input class="martop" type="checkbox"  name="actividad" value="pintura"><label for="actividad">Pintura</label><br>
+                               <input class="martop" type="checkbox"  name="actividad" value="fotografia"><label for="actividad">Fotografía</label><br>
 
                            </div>
                            <div class="dc2">
-                               <input class="martop" type="checkbox"><label for="">Música</label><br>
-                               <input class="martop" type="checkbox"><label for="">Viajar</label><br>
+                               <input class="martop" type="checkbox"  name="actividad" value="deportes"><label for="actividad">Deportes</label><br>
+                               <input class="martop" type="checkbox"  name="actividad" value="leer"><label for="actividad">Leer</label><br>
                            </div>
                            <div class="dc2">
-                               <input class="martop" type="checkbox"><label for="">Pintura</label><br>
-                               <input class="martop" type="checkbox"><label for="">Fotografía</label><br>
+                               <input class="martop" type="checkbox"  name="actividad" value="videojuegos"><label for="actividad">Videojuegos</label><br>
+                               <input class="martop" type="checkbox"  name="actividad" value="gastronomia"><label for="actividad">Gastronomia</label><br>
 
                            </div>
 
 
                      </fieldset>
-                       <fieldset>
-                              <br>
-                              <br>
-                              <br>
+                       <fieldset id="fecha1">
+                              
                           </fieldset>
                          
 
@@ -120,14 +119,19 @@
             </fieldset>
             
         </Form>
-        <div id="parrafo1">
-
-        </div>
+        <div id="resultado" class="oculto">
+			<h2>Los datos del usuario son los siguientes</h2>			
+		<ul id="listaDatos"> </ul>
+		</div>
 
         <footer>
                 <p>&copy; copyright Daniel Garcia Lindo</p>
         </footer>
 </section>
-        <script src="../daniel_garcia_lindo/js/ex.js"></script>
+         <script src="js/app.js"></script>
+        <script src="js/ex.js"></script> 
+        <script src="js/select.js"></script>
+        <script src="js/fecha.js"></script>
+        <script src="js/contraseñas.js"></script>
     </body>
 </html>
